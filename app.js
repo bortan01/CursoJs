@@ -71,3 +71,86 @@
 //nuevaFuncion();
 
 //clase 15
+
+//function a(){
+//   console.log("funcion a ") ;
+// }
+// a();
+// a.nombre = "Maria";
+// a.direccion = {
+//     pais : "El Salvador",
+//     ciudad : "San Verapaz"
+// };
+
+//clase 16
+//var persona = {
+//  nombre : "Maria",
+//  apellido : "Dubon",
+//  imprimirNombre : function (){
+//      console.log("hola " + this.nombre);
+//  },
+//  direccion : {
+//      pais : "Costa Rica",
+//      obtenerPais : function() {
+//          var self = this;
+//          function nuevaDireccion (){
+//              console.log(self);
+//              console.log("la direccion es en "+ self.pais);
+//          }
+//            nuevaDireccion();
+//      }
+//  }
+//};
+//persona.imprimirNombre();
+//persona.direccion.obtenerPais(); 
+
+//clase 17
+//function Persona (){
+//    this.nombre = "Boris";
+//    this.apellido = "miranda"; 
+//    this.edad = 20;
+//    console.log("cosa");
+//    this.nombreCompleto = function (){
+//        return this.nombre + " "+ this.apellido;
+//    };
+//}
+//var juan = new Persona();
+//console.log(juan);
+//console.log(juan.edad);
+//console.log(juan.nombreCompleto());
+
+//clase 18
+//function Jugador (nombre){
+//    this.nombre = nombre ;
+//    this.pv = 100;
+//    this.sp = 100;
+//    
+//    //this.curar = fu
+//    this.curar = function (jugadorObjetivo){
+//        this.sp-=40 ;
+//        jugadorObjetivo.pv+= 20; 
+//    };
+//}
+//var gandalf = new Jugador("gandalf");
+//var legolas = new Jugador("legolas");
+//
+//console.log(gandalf);
+//console.log(legolas);
+//
+//gandalf.curar(legolas);
+//console.log(gandalf);
+//console.log(legolas);
+
+//clase 19
+//function Persona(){
+//    this.nombre = "Fernando";
+//    this.apellido = "Miranda";
+//    this.edad = 12;
+//    
+//}
+//Persona.prototype.imprimirInfo = function (){
+//     console.log(this.nombre + " " + this.apellido +"(" +this.edad+")");
+//    
+//};
+//var fer = new Persona();
+//fer.imprimirInfo(); 
