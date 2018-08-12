@@ -154,3 +154,57 @@
 //};
 //var fer = new Persona();
 //fer.imprimirInfo(); 
+
+//clase 20
+//(function (){
+//    var a = 10;
+//    console.log(a);
+//    function cambiarA(){
+//        a = 20;
+//    }
+//    cambiarA();
+//    console.log(a);
+//})();
+//
+//function ejecutarFuncion(fn){
+//    fn();
+//    return  true;
+//};
+//
+//ejecutarFuncion(function (){
+//   console.log("funcion anonima ejecutada");  
+//});
+
+//clase 21
+//function identifica (param){
+//    if (typeof param === "function") {
+//        param();
+//    }else if(param instanceof Persona){
+//        console.log(param.nombre); 
+//    }else{
+//        
+//    }
+//
+//}
+//function Persona(){
+//    this.nombre = "Fernando";
+//    this.apellido ="Miranda";
+//}
+//var Fernando = new Persona();
+// identifica(Fernando);
+//clase 22
+var arr = [5,4,3,2,1];
+console.log(arr);
+
+console.log(arr.reverse());
+arr = arr.map(function (elemento){
+    elemento *= elemento;
+    return elemento;
+});
+console.log(arr);
+
+arr = arr.map(Math.sqrt);
+console.log(arr);
+
+arr =  arr.join("*");
+console.log(arr);
